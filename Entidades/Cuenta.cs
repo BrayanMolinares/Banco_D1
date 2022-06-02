@@ -20,6 +20,10 @@ namespace Entidades
         {
             return Saldo;
         }
+        public void setSaldo(double saldo)
+        {
+            this.Saldo = saldo;
+        }
         public string Consignar(double valor)
         {
             Saldo += valor;

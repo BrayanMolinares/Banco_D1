@@ -39,6 +39,7 @@
             this.botonSalir = new System.Windows.Forms.Button();
             this.textSaldo = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
+            this.botonConsignarCuenta = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label1
@@ -56,6 +57,7 @@
             this.textIdCliente.Name = "textIdCliente";
             this.textIdCliente.Size = new System.Drawing.Size(100, 20);
             this.textIdCliente.TabIndex = 1;
+            this.textIdCliente.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.TextIdCliente_KeyPress);
             // 
             // label2
             // 
@@ -98,7 +100,7 @@
             this.botonAgregar.TabIndex = 6;
             this.botonAgregar.Text = "Nueva";
             this.botonAgregar.UseVisualStyleBackColor = true;
-            this.botonAgregar.Click += new System.EventHandler(this.botonAgregar_Click);
+            this.botonAgregar.Click += new System.EventHandler(this.BotonAgregar_Click);
             // 
             // botonBuscar
             // 
@@ -117,6 +119,7 @@
             this.botonSalir.TabIndex = 8;
             this.botonSalir.Text = "Salir";
             this.botonSalir.UseVisualStyleBackColor = true;
+            this.botonSalir.Click += new System.EventHandler(this.botonSalir_Click);
             // 
             // textSaldo
             // 
@@ -134,11 +137,22 @@
             this.label4.TabIndex = 9;
             this.label4.Text = "Saldo";
             // 
+            // botonConsignarCuenta
+            // 
+            this.botonConsignarCuenta.Location = new System.Drawing.Point(283, 158);
+            this.botonConsignarCuenta.Name = "botonConsignarCuenta";
+            this.botonConsignarCuenta.Size = new System.Drawing.Size(75, 23);
+            this.botonConsignarCuenta.TabIndex = 11;
+            this.botonConsignarCuenta.Text = "Consignar";
+            this.botonConsignarCuenta.UseVisualStyleBackColor = true;
+            this.botonConsignarCuenta.Click += new System.EventHandler(this.button1_Click);
+            // 
             // FormCuentas
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(370, 317);
+            this.Controls.Add(this.botonConsignarCuenta);
             this.Controls.Add(this.textSaldo);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.botonSalir);
@@ -170,5 +184,6 @@
         private System.Windows.Forms.Button botonSalir;
         private System.Windows.Forms.TextBox textSaldo;
         private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Button botonConsignarCuenta;
     }
 }

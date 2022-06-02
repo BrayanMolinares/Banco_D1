@@ -49,5 +49,11 @@ namespace Logica
             }
             return repositorio.Modificar(listaCuentas);
         }
+        public string Consignar(Cuenta cuenta, double saldoConsignado)
+        {
+            cuenta.setSaldo(cuenta.getSaldo()*saldoConsignado);
+            
+            return "El nuevo saldo es de: $"+cuenta.getSaldo();
+        }
     }
 }

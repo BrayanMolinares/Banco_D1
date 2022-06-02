@@ -89,6 +89,7 @@
             this.botonBuscarCliente.TabIndex = 5;
             this.botonBuscarCliente.Text = "Buscar";
             this.botonBuscarCliente.UseVisualStyleBackColor = true;
+            this.botonBuscarCliente.Click += new System.EventHandler(this.botonBuscarCliente_Click);
             // 
             // botonSalir
             // 
@@ -98,8 +99,9 @@
             this.botonSalir.TabIndex = 6;
             this.botonSalir.Text = "Salir";
             this.botonSalir.UseVisualStyleBackColor = true;
+            this.botonSalir.Click += new System.EventHandler(this.botonSalir_Click);
             // 
-            // MenuClientes
+            // FormClientes
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -111,7 +113,7 @@
             this.Controls.Add(this.label2);
             this.Controls.Add(this.textIdCliente);
             this.Controls.Add(this.label1);
-            this.Name = "MenuClientes";
+            this.Name = "FormClientes";
             this.Text = "MenuClientes";
             this.ResumeLayout(false);
             this.PerformLayout();
